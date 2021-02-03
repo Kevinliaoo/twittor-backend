@@ -38,7 +38,7 @@ app.use(notFoundHandler);
 
 app.use(errors);    // Este va último
 
-app.listen(config.api.port, () => {
+app.listen(process.env.PORT, () => {
     console.log("API escuchando en el puerto" + config.api.port);
 });
  
